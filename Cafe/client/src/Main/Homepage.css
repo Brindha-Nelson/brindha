@@ -1,0 +1,312 @@
+.Shop {
+    width: 100%;
+    height: 500px;
+  }
+  
+.Signin, .Cart, .About, .Contact, .Orders {
+  position: absolute;
+  top: 30px;
+  background: rgba(195, 255, 195, 0.4);
+  border: 2px solid rgba(116, 20, 31, 0.3);
+  padding: 8px 20px;
+  font-size: 20px;
+  color: rgb(98, 22, 22);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Contact {
+  left: 40%;
+}
+
+.About {
+  left: 52%;
+}
+
+.Orders {
+  left: 63%;
+}
+
+.Cart {
+  left: 78%;
+}
+
+.Signin {
+  left: 88%;
+}
+
+.Signin:hover, .Cart:hover, .About:hover, .Contact:hover, .Orders:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+  
+  .cafename {
+    position: absolute;
+    top: 130px;
+    left: 150px;
+    color: rgb(86, 186, 216);text-shadow: 0 3px 18px #5e3c24;
+  }
+  
+  .intro {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: rgb(212, 255, 211);
+    text-shadow: 0 4px 20px #000000;
+    font-size: 20px;
+  }
+  
+  .Menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .images {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+  }
+  
+  .images.active {
+    border: 3px solid #a0522d;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(160, 82, 45, 0.5);
+  }
+  
+  .images:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(160, 82, 45, 0.4);
+  }
+  
+  .Container {
+    padding: 40px;
+    background-color: #fffaf0;
+    font-family: Georgia, serif;
+  }
+  
+  .Menuimage {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .items {
+    text-align: center;
+  }
+  
+  .preview {
+    padding: 20px;
+    background-color: #f1e8dc;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .previewTitle {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #5e3c24;
+  }
+  
+  .button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #5e3c24;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #7d5032;
+    transform: translateY(-2px);
+  }
+  
+  .itemsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .item {
+    width: 320px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .itemImage {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .itemName {
+    font-size: 20px;
+    margin: 0;
+    color: #5e3c24;
+  }
+  
+  .itemDesc {
+    font-size: 14px;
+    color: #777;
+    margin: 4px 0;
+  }
+  
+  .itemPrice {
+    font-size: 16px;
+    font-weight: bold;
+    color: #a0522d;
+  }
+  
+  .reviews-container {
+    padding: 30px;
+    background-color: #fffaf0;
+    text-align: center;
+  }
+  
+  .coming-soon {
+    font-size: 18px;
+    color: #777;
+    font-style: italic;
+  }
+  
+  @media (max-width: 1024px) {
+    .itemsContainer {
+      grid-template-columns: 1fr 1fr ;
+    }
+    
+    .item {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .Menuimage {
+      flex-wrap: wrap;
+    }
+    
+    .items {
+      margin-bottom: 20px;
+    }
+    
+    .itemsContainer {
+      grid-template-columns: 1fr;
+    }
+    
+    .Signin, .Cart, .About, .Contact, .Orders {
+      padding: 6px 12px;
+      font-size: 16px;
+    }
+
+    .Contact {
+      left: 5%;
+    }
+
+    .About {
+      left: 25%;
+    }
+
+    .Orders {
+      left: 45%;
+    }
+
+    .Cart {
+      left: 65%;
+    }
+
+    .Signin {
+      left: 85%;
+    }
+    
+    .cafename {
+      top: 100px;
+      left: 50px;
+      font-size: 24px;
+    }
+    
+    .intro {
+      top: 150px;
+      left: 30px;
+      font-size: 14px;
+    }
+  } 
+  .review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .review-form input,
+  .review-form textarea {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: serif;
+  }
+  
+  .review-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .review-form button {
+    padding: 10px 20px;
+    background-color: #5e3c24;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .review-form button:hover {
+    background-color: #7d5032;
+  }
+  
+  .submitted-reviews {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .review {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    text-align: left;
+  }

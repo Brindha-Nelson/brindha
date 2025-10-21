@@ -1,0 +1,50 @@
+.menu-container {
+    padding: 40px;
+    max-width: 1200px;
+    text-align: center;
+    font-family: 'Caveat' Dancing Script;
+  }
+  
+  .menu-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .menu-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .menu-img {
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-title {
+    font-size: 1.2rem;
+    color: #7c3e0c;
+    margin-bottom: 5px;
+  }
+  
+  .menu-desc {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  

@@ -1,0 +1,76 @@
+.menu-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .menu-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat( minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .menu-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .menu-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-title {
+    font-size: 1.2rem;
+    color: #7c3e0c;
+    margin-bottom: 5px;
+  }
+  
+  .menu-desc {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .cart {
+    width: 90%;
+    height: 45px;
+    background-color: #ba5d28;
+    border-color: #ac7649;
+    color: rgb(255, 234, 208);
+    font-size: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .cart:hover {
+    background-color: #7c3e0c;
+    transform: scale(1.05);
+  }
+
+  .cart.in-cart {
+    background-color: #2ecc71;
+    border-color: #27ae60;
+  }
+
+  .cart.in-cart:hover {
+    background-color: #27ae60;
+  }
